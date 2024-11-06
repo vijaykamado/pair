@@ -1,0 +1,102 @@
+
+        /* Reset margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Background image and blur effect */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(WhatsApp\ Image\ 2024-11-06\ at\ 23.14.09.jpeg); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            filter: blur(2px); /* Adjusted blur level for mobile */
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 90%; /* Adjusted to fit mobile screens */
+            width: 100%;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.8); /* Transparent background */
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 1.8em; /* Adjusted for mobile readability */
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 1em;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        h2 {
+            color: #28a745;
+            font-size: 1.5em; /* Adjusted for readability on mobile */
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            label {
+                font-size: 0.9em;
+            }
+
+            select, button {
+                font-size: 0.9em;
+                padding: 8px;
+            }
+
+            .container {
+                padding: 10px;
+                margin: 10px auto;
+            }
+        }
+    
